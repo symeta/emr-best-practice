@@ -9,4 +9,6 @@ https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-group-config
 https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-purchasing-options.html
 
 
+https://aws.amazon.com/cn/blogs/china/best-practices-for-successfully-managing-memory-for-apache-spark-applications-on-amazon-emr-2/
+
 

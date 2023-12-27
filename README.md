@@ -73,7 +73,7 @@
   
 
 ## resources
-https://aws.github.io/aws-emr-best-practices/
-https://aws.amazon.com/cn/blogs/china/best-practices-for-successfully-managing-memory-for-apache-spark-applications-on-amazon-emr-2/
+  - https://aws.github.io/aws-emr-best-practices/
+  - https://aws.amazon.com/cn/blogs/china/best-practices-for-successfully-managing-memory-for-apache-spark-applications-on-amazon-emr-2/
 
 

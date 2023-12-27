@@ -24,6 +24,8 @@
 
   - [architecture diagram](https://github.com/symeta/realtime-dw-prototype/tree/architecture-overview)
   - [sample code](https://github.com/symeta/realtime-dw-prototype/tree/Validate-the-connection-between-MSK-cluster-and-Hudi-(MSK-consumer-via-flink%40emr))
+  - Note: (1) in the case that emr hive/spark application writes to s3, such writing is accomplished via EMRFS;
+    (2) in the case of flink application writing to s3, such writing is accomplished via flink-s3-fs-hadoop. Both cases can achieve writing to s3 bucket by simply pointing the output destination as s3 buket url
 
 
 1. flink, flink jobs, hdfs, s3, hive,hadoop,yarn,zk 这些组件的关系与关联方式。

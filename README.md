@@ -22,8 +22,8 @@
 
 - a typical data flow diagram of flink application having kafka as the source, hdfs/s3 and the destination
 
-  -[architecture diagram](https://github.com/symeta/realtime-dw-prototype/tree/architecture-overview)
-  -[sample code](https://github.com/symeta/realtime-dw-prototype/tree/Validate-the-connection-between-MSK-cluster-and-Hudi-(MSK-consumer-via-flink%40emr))
+  - [architecture diagram](https://github.com/symeta/realtime-dw-prototype/tree/architecture-overview)
+  - [sample code](https://github.com/symeta/realtime-dw-prototype/tree/Validate-the-connection-between-MSK-cluster-and-Hudi-(MSK-consumer-via-flink%40emr))
 
 
 1. flink, flink jobs, hdfs, s3, hive,hadoop,yarn,zk 这些组件的关系与关联方式。

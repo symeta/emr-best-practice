@@ -2,18 +2,18 @@
 
 ## 1. flink@emr
 
+- Flink Architecture
 
-
-Flink Architecture
 ![image](https://github.com/symeta/emr-best-practice/assets/97269758/dcd909fc-adc8-476e-a5d0-e08f45cf8074)
 
 
 
-YARN Architecture
+- YARN Architecture
+
 ![image](https://github.com/symeta/emr-best-practice/assets/97269758/6702aeab-f0e0-4387-ae81-c2fdfa7f6d89)
 
 
-EMR Component Distribution Diagram
+- EMR Component Distribution Diagram
 
 <img width="1056" alt="image" src="https://github.com/symeta/emr-best-practice/assets/97269758/82d1f310-3d61-40cf-afd6-666b6ff8f510">
 

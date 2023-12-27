@@ -67,21 +67,13 @@
 
   https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-purchasing-options.html
 
+## 3. [emr cost optimization](https://aws.github.io/aws-emr-best-practices/cost_optimization/best_practices/)
+
+## 4. [emr reliability](https://aws.github.io/aws-emr-best-practices/reliability/best_practices/)
   
-1. flink, flink jobs, hdfs, s3, hive,hadoop,yarn,zk 这些组件的关系与关联方式。
-2. 数据流向，kafka flink jobs 的数据分别是如何写到 hdfs和s3。
-3. flink jobs 的 taskmanager的out 和 log如何关闭或自动rotate。
-4. EMR, primary, core, instance group 的具体区别与用法。
-5. 节点资源消耗 成本控制与高可用。
 
-
-
-https://aws.github.io/aws-emr-best-practices/applications/spark/best_practices/
-
-https://aws.amazon.com/cn/blogs/big-data/seven-tips-for-using-s3distcp-on-amazon-emr-to-move-data-efficiently-between-hdfs-and-amazon-s3/
-
-
-
+## resources
+https://aws.github.io/aws-emr-best-practices/
 https://aws.amazon.com/cn/blogs/china/best-practices-for-successfully-managing-memory-for-apache-spark-applications-on-amazon-emr-2/
 
 

@@ -26,8 +26,48 @@
   - [sample code](https://github.com/symeta/realtime-dw-prototype/tree/Validate-the-connection-between-MSK-cluster-and-Hudi-(MSK-consumer-via-flink%40emr))
   - Note: (1) in the case that emr hive/spark application writes to s3, such writing is accomplished via EMRFS;
   - (2) in the case of flink application writing to s3, such writing is accomplished via flink-s3-fs-hadoop. Both cases can achieve writing to s3 bucket by simply pointing the output destination as s3 buket url
+ 
+
+- flink log shutdown, auto rotate
+
+  - shutdown log via code
+    ```java
+    Log4jLoggerAdapter logger = (Log4jLoggerAdapter)LoggerFactory.getLogger(JobManager.class);
+    Field loggerField = Log4jLoggerAdapter.class.getDeclaredField("logger");
+    loggerField.setAccessible(true);
+    Logger loggerObject = (Logger)loggerField.get(logger);
+    Field repoField = Category.class.getDeclaredField("repository");
+    repoField.setAccessible(true);
+    LoggerRepository repoObject = (LoggerRepository)repoField.get(loggerObject);
+    repoObject.setThreshold(Level.OFF);
+    ```
+  - shutdown log via config
+    ```properties
+    log4j.logger.my.app1=DEBUG
+    log4j.logger.my.app2=WARN
+    log4j.logger.my.app3=OFF
+    ```
+  - [auto rotate tool guidance](https://aws.amazon.com/cn/blogs/big-data/seven-tips-for-using-s3distcp-on-amazon-emr-to-move-data-efficiently-between-hdfs-and-amazon-s3/
+)
 
 
+- [zookeeper use case summary](https://zookeeper.apache.org/doc/r3.9.1/zookeeperUseCases.html)
+
+## 2. emr specific terms explanation
+
+  - primary nodes
+  - core nodes
+  - task nodes
+  - instance group
+  - instance fleet
+
+  https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-master-core-task-nodes.html
+  
+  https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-group-configuration.html
+
+  https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-purchasing-options.html
+
+  
 1. flink, flink jobs, hdfs, s3, hive,hadoop,yarn,zk 这些组件的关系与关联方式。
 2. 数据流向，kafka flink jobs 的数据分别是如何写到 hdfs和s3。
 3. flink jobs 的 taskmanager的out 和 log如何关闭或自动rotate。
@@ -40,9 +80,6 @@ https://aws.github.io/aws-emr-best-practices/applications/spark/best_practices/
 
 https://aws.amazon.com/cn/blogs/big-data/seven-tips-for-using-s3distcp-on-amazon-emr-to-move-data-efficiently-between-hdfs-and-amazon-s3/
 
-https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-group-configuration.html
-
-https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-purchasing-options.html
 
 
 https://aws.amazon.com/cn/blogs/china/best-practices-for-successfully-managing-memory-for-apache-spark-applications-on-amazon-emr-2/

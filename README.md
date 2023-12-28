@@ -74,7 +74,13 @@
    - [managed scaling & custom scaling comparison](https://aws.amazon.com/cn/blogs/big-data/introducing-amazon-emr-managed-scaling-automatically-resize-clusters-to-lower-cost/)
 
 ## 4. [emr reliability](https://aws.github.io/aws-emr-best-practices/reliability/best_practices/)
-  
+
+## 5. scaling related 
+
+   - [managed scaling metrics](https://docs.aws.amazon.com/emr/latest/ManagementGuide/managed-scaling-metrics.html)
+   - [custom scaling deep dive](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-automatic-scaling.html)
+   - [managed scaling & custom scaling comparison](https://aws.amazon.com/cn/blogs/big-data/introducing-amazon-emr-managed-scaling-automatically-resize-clusters-to-lower-cost/)
+   - [scale up storage on emr cluster](https://aws.amazon.com/cn/blogs/big-data/dynamically-scale-up-storage-on-amazon-emr-clusters/)
 
 ## resources
   - https://aws.github.io/aws-emr-best-practices/

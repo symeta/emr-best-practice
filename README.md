@@ -74,6 +74,9 @@
 
 ## resources
   - https://aws.github.io/aws-emr-best-practices/
+  - https://aws.amazon.com/cn/blogs/china/realize-emr-automatic-cluster-size-adjustment-with-eventbridge-and-lambda/
+  - https://aws.amazon.com/cn/blogs/china/cost-optimization-application-practice-of-amazon-ec2-spot-instance-in-aws-emr-cluster/
+  - https://aws.amazon.com/cn/blogs/china/best-practices-for-running-apache-spark-applications-using-amazon-ec2-spot-instances-with-amazon-emr/
   - https://aws.amazon.com/cn/blogs/china/best-practices-for-successfully-managing-memory-for-apache-spark-applications-on-amazon-emr-2/
 
 

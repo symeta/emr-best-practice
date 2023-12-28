@@ -29,7 +29,7 @@
  
 
 - flink log shutdown, auto rotate
-
+  - **DO NOT RECOMMEND TO SHUTDOWM LOGS, SUGGEST TO ARCHIVE LOGS TO S3**
   - shutdown log via code
     ```java
     Log4jLoggerAdapter logger = (Log4jLoggerAdapter)LoggerFactory.getLogger(JobManager.class);

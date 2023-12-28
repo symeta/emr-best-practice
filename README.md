@@ -69,6 +69,9 @@
 
 ## 3. [emr cost optimization](https://aws.github.io/aws-emr-best-practices/cost_optimization/best_practices/)
 
+   -[managed scaling metrics](https://docs.aws.amazon.com/emr/latest/ManagementGuide/managed-scaling-metrics.html)
+   -[custom scaling deep dive](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-automatic-scaling.html)
+
 ## 4. [emr reliability](https://aws.github.io/aws-emr-best-practices/reliability/best_practices/)
   
 
